@@ -45,25 +45,9 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/FEMessage/el-data-table.git"
+    "url": "https://github.com/mrsKaneshiro/gcyn-dynamicui.git"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "@babel/eslint-parser"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+  "engine": {
+    "node": ">=10"
+  }
 }
