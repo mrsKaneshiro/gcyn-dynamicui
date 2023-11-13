@@ -10,7 +10,7 @@ export default {
       extensions: ['.vue', '.js'],
     }),
     terser(),
-    eslint(),
+    // eslint()
   ],
   input: './packages/index.js',
   output: [

@@ -9,7 +9,8 @@
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "rollup -c --bundleConfigAsCjs"
+    "lib": "rollup -c --bundleConfigAsCjs",
+    "rollup":"rollup --config rollup.config.js"
   },
   "dependencies": {
     "core-js": "^3.8.3",

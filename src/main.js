@@ -12,5 +12,5 @@ Vue.use(GUI);
 // Vue.component('g-table', Table);
 
 new Vue({
-  render: (h) => h(App),
+    render: (h) => h(App)
 }).$mount('#app');
