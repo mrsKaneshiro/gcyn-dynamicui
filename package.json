@@ -10,7 +10,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "lib": "rollup -c --bundleConfigAsCjs",
-    "rollup":"rollup --config rollup.config.js"
+    "rollup": "rollup --config rollup.config.js"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -29,6 +29,7 @@
     "eslint-plugin-vue": "^8.0.3",
     "node-sass": "6.0.0",
     "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-eslint": "^7.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-uglify-es": "^0.0.1",

@@ -2,6 +2,7 @@ import vue from 'rollup-plugin-vue';
 import resolve from 'rollup-plugin-node-resolve';
 import { eslint } from 'rollup-plugin-eslint';
 import terser from '@rollup/plugin-terser';
+import copy from 'rollup-plugin-copy';
 
 export default {
   plugins: [
@@ -10,9 +11,12 @@ export default {
       extensions: ['.vue', '.js'],
     }),
     terser(),
-    // eslint()
+    // eslint(),
+    copy({
+      targets: [{ src: 'src/packages/*', dest: 'packages' }],
+    }),
   ],
-  input: './packages/index.js',
+  input: './src/packages/index.js',
   output: [
     {
       name: 'dymaticui',

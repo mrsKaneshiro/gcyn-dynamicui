@@ -1,7 +1,8 @@
 <template>
   <div id="app">
+    <g-breadcrumb />
     <g-table
-      :dataList="dataList"
+      :data-list="dataList"
       :column="column"
       :total="total"
       @currentChange="currentChange"
@@ -10,18 +11,9 @@
 </template>
 
 <script>
-// import gTable from './packages/table/gTable.vue'
 
 export default {
   name: 'App',
-  // components: {
-  //   gTable
-  // },
-  methods: {
-    currentChange(val) {
-      console.log(`父级${val}页`)
-    }
-  },
   data() {
     return {
       dataList: [],
@@ -33,17 +25,17 @@ export default {
     this.column = [
       {
         props: 'id',
-        label: 'ID'
+        label: 'ID',
       },
       {
         props: 'name',
-        label: '姓名'
+        label: '姓名',
       },
     ];
     this.dataList = [
       {
         id: '12345',
-        name: 'gaoxin'
+        name: 'gaoxin',
       },
       {
         id: '1111',
@@ -53,7 +45,15 @@ export default {
           name: 'backgroundColor: #fff000',
         },
       },
-    ]
+    ];
   },
-}
+  // components: {
+  //   gTable
+  // },
+  methods: {
+    currentChange(val) {
+      console.log(`父级${val}页`);
+    },
+  },
+};
 </script>
